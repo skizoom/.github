@@ -26,6 +26,7 @@ Please make sure that the pull request is limited to one type (docs, feature, et
 - [ ] Code tested on preview by another dev
 - [ ] Sign-off has been given by product / business
 - [ ] (Frontend only) Design check carried out
+- [ ] (Frontend only) BrowserStack
 
 ## Release
 - [ ] Environment variables
