@@ -1,0 +1,49 @@
+version: 2
+updates:
+    # .NET nuget dependencies
+    - package-ecosystem: "nuget"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+          day: "monday"
+          time: "04:00"
+      pull-request-branch-name:
+          # Change the default separator (/) to a hyphen (-)
+          # This is for our legacy CI pipelines to not fail
+          separator: "-"
+      open-pull-requests-limit: 5
+      ignore:
+          - dependency-name: "Microsoft.NET.Test.Sdk"
+            update-types: ["version-update:semver-major"]
+      assignees:
+          - "dependabot-bot"
+
+    # React (npm / yarn) dependencies
+    - package-ecosystem: "npm"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+          day: "monday"
+          time: "04:00"
+      pull-request-branch-name:
+          # Change the default separator (/) to a hyphen (-)
+          # This is for our legacy CI pipelines to not fail
+          separator: "-"
+      open-pull-requests-limit: 5
+      ignore:
+          - dependency-name: "react"
+            update-types: ["version-update:semver-major"]
+      assignees:
+          - "dependabot-bot"
+
+    # GitHub Actions
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+          day: "monday"
+          time: "04:00"
+      pull-request-branch-name:
+          # Change the default separator (/) to a hyphen (-)
+          # This is for our legacy CI pipelines to not fail
+          separator: "-"
