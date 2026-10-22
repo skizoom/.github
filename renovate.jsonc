@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>skizoom/ci-workflows//renovate/default.jsonc"
+  ]
+}
