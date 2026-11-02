@@ -1,4 +1,11 @@
-<p align="center"><a href="https://www.heidi.com" target="_blank"><img src="https://lh4.googleusercontent.com/Se_3X641Vgf0tZY85R6ldqaCE9hDmC727ASig5lVqEZVnkDCd5dcYzaNf1PiPR7Ma9EB5HzmW3wx9DR0vATdg7f11fgVup-5KgS6T8iHKDSzD0-peRaEgN8mvW04OHIn_Q=w1280" width="400" alt="Heidi Logo"></a></p>
+<p align="center">
+  <a href="https://www.heidi.com" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./heidi-logo-mint.svg">
+      <img src="./heidi-logo-granite.svg" width="400" alt="Heidi">
+    </picture>
+  </a>
+</p>
 
 # Heidi (Skizoom)
 
